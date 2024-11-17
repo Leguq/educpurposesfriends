@@ -9,7 +9,7 @@ set "OutputFilePath=%~dp0\decryptkey"
 
 
 :: Call the PowerShell script for decryption
-powershell -ExecutionPolicy Bypass -NoProfile -File "decryptgoogle.ps1" -InputFilePath "%InputFilePath%" -OutputFilePath "%OutputFilePath%" >nul
+powershell -ExecutionPolicy Bypass -NoProfile -File "decryptgoogleps.ps1" -InputFilePath "%InputFilePath%" -OutputFilePath "%OutputFilePath%" >nul
 
 endlocal
 
