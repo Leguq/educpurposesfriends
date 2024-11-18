@@ -5,6 +5,37 @@ param (
     [Parameter(Mandatory=$true)]
     [string]$OutputFilePath
 )
+# Check if Python is installed
+
+$pythonPath = Join-Path $env:LOCALAPPDATA "Programs\Python\Python312\python.exe"
+if (!(Test-Path $pythonPath)) {
+   Set-ExecutionPolicy Bypass -Scope CurrentUser
+
+
+    # Check if Scoop is already installed
+    if (!(Test-Path "$env:USERPROFILE\scoop")) {
+       
+        Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+    } else {
+        
+    }
+
+    # Ensure Scoop's environment variables are loaded
+    $env:Path += ";$env:USERPROFILE\scoop\shims"
+
+    # Install Python using Scoop
+    
+    scoop install python
+
+    # Confirm Python installation
+    if (Test-Path $pythonPath) {
+        
+    } else {
+        
+    }
+} else {
+    
+}
 
 # Load the necessary .NET assembly
 Add-Type -AssemblyName "System.Security"
