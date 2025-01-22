@@ -14,5 +14,5 @@ if not exist "%InputFilePath%" (
 
 :: Call the PowerShell script for decryption
 powershell -ExecutionPolicy Bypass -NoProfile -File "decryptgoogleps.ps1" -InputFilePath "%InputFilePath%" -OutputFilePath "%OutputFilePath%" >nul
-
+exit
 endlocal
