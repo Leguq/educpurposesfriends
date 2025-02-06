@@ -47,6 +47,7 @@ echo Python installation verified. Continuing with the script...
 
 pip uninstall pycrypto -y
 pip install discord.py
+pip install asyncio
 pip install pycryptodome
 pip install requests
 pip install scapy
