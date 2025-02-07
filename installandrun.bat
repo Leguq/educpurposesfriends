@@ -46,7 +46,7 @@ echo Python installation verified. Continuing with the script...
 
 
 pip uninstall pycrypto -y
-pip install discord.py
+pip install discord.py==2.3.2
 pip install asyncio
 pip install pycryptodome
 pip install requests
